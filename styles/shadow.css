@@ -14,7 +14,7 @@
     height: 1200px;
     /* padding শুধু content-কে সরায়, background image-কে নয়। */
     padding-top: 50px;
-    /* image টা এনেছি styles folder-এর পাশের folder images থেকে, তাই extra ../images দেয়া লাগছে। */
+    /* image টা এনেছি shadow.css এর আগের folder, styles folder-এর পাশের folder images থেকে, তাই extra ../images দেয়া লাগছে। Example: ../../../ → Go three folders up.*/
     background-image: url(../images/frozen.jpeg);
     /* Can do  background-repeat: repeat-x; or background-repeat: repeat-y;*/
     background-repeat: no-repeat;
@@ -22,3 +22,44 @@
     background-position: top center;
     /* background-position: top 50px center; */
 }
+
+
+/* 
+Background image add example in CSS
+
+1.
+Project/
+│
+└── assets/
+    ├── shadow.css
+    └── frozen.jpeg
+
+Syntax: background-image: url("frozen.jpeg");
+
+
+2. 
+Project/
+│
+├── images/
+│   └── frozen.jpeg
+│
+└── styles/
+    └── shadow.css
+
+Syntax: background-image: url("../images/frozen.jpeg");
+
+
+3.
+Project/
+│
+├── images/
+│   └── Aso/
+│       └── frozen.jpeg
+│
+└── a/
+    └── b/
+        └── c/
+            └── shadow.css
+
+Syntax: background-image: url("../../../images/Aso/frozen.jpeg");
+ */
