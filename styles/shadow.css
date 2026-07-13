@@ -1,0 +1,24 @@
+*{
+    /* margin আগেই 0 করে দিলাম, যাতে বুঝতে সুবিধা হয়। */
+    margin: 0px; 
+}
+.blog{
+    background-color: rgb(150, 124, 190);
+    margin: 50px;
+    box-shadow: 20px 20px 20px black;
+}
+
+#head{
+    background-color: #8bded5;
+    text-align: center;
+    height: 1200px;
+    /* padding শুধু content-কে সরায়, background image-কে নয়। */
+    padding-top: 50px;
+    /* image টা এনেছি styles folder-এর পাশের folder images থেকে, তাই extra ../images দেয়া লাগছে। */
+    background-image: url(../images/frozen.jpeg);
+    /* Can do  background-repeat: repeat-x; or background-repeat: repeat-y;*/
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    background-position: top center;
+    /* background-position: top 50px center; */
+}
