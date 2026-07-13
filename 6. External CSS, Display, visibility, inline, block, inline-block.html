@@ -3,26 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Box Model</title>
-    <style>
-        *{
-            /* এখান আর margin থাকবে না। কিন্তু লেখাগুলো একেবারে গায়ে গায়ে লাগবে না, কারণ font এবং line-height এখনো আছে। */
-            margin: 0px;
-        }
-        article{
-            background-color: aquamarine;
-            /* border aro different type deya zay like - dotted, dashed. Differet side এ দেয়া যায়। border-left, border-right, border-top, border-bottom. Syntax ---- border: width style color;*/
-            border: 2px solid black;
-            text-align: justify;
-            /* border-width: 10px; Can be possible.*/
-
-            /* margin-left, margin-right, margin-top, margin-bottom. Syntax ---- margin: width;  margin: 10px; margin: 10px 20px; margin: 10px 20px 30px; margin: 10px 20px 30px 40px; */
-            margin: 10px;
-
-            /* padding-left, padding-right, padding-top, padding-bottom. Syntax ---- padding: width;  padding: 10px; padding: 10px 20px; padding: 10px 20px 30px; padding: 10px 20px 30px 40px; */
-            padding: 10px;
-        }
-    </style>
+    <title>External CSS</title>
+    <link rel="stylesheet" href="styles/display.css">
 </head>
 <body>
     <article>
