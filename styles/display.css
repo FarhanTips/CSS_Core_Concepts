@@ -1,7 +1,44 @@
 article{
-    background-color: rgb(27, 181, 181);
+    background-color: rgb(184, 198, 198);
 }
 
 h2{
     text-align: center;
 }
+
+#second-article{
+    /* totally vanish hoye zabe screen theke. */
+    display: none;
+    /* vanish hoye zabe but এর জন্য বরাদ্দকৃত জায়গা ফাকা পড়ে থাকবে/ */
+    /* visibility: hidden; */
+}
+
+/* It is called Block. Block → New line + Width/Height work. */
+strong{
+    color: chocolate;
+    display: block;
+    width: 250px;
+    height: 50px;
+    border: 2px solid red;
+}
+
+
+/* It is called Inline. Inline → Same line + Width/Height don't work. */
+/* strong{
+    
+    color: chocolate;
+    display: inline;
+    width: 250px;
+    height: 50px;
+    border: 2px solid red;
+} */
+
+/* It is called Inline-Block. Inline-block → Same line + Width/Height work. */
+/* strong{
+    
+    color: chocolate;
+    display: inline-block;
+    width: 250px;
+    height: 50px;
+    border: 2px solid red;
+} */

@@ -66,7 +66,7 @@
     <ul>
         <li>Rice</li>
         <li class="green bold">Dal</li>
-        <!-- এইজন্যই CSS হচ্ছে Cascading. প্রথমে Biriyani bold হছে, তারপর green হয়েছে কারন <style> tag-এর মধ্যে green এর class selector serial-এ আগে আছে purple-এর থেকে। তারপর font-size বেড়েছে, Atlast purple হয়েছে।-->
+        <!-- এইজন্যই CSS হচ্ছে Cascading. প্রথমে Biriyani bold হছে, তারপর green হয়েছে কারন <style> tag-এর মধ্যে green এর class selector serial-এ আগে আছে purple-এর থেকে। তারপর font-size বেড়েছে, Atlast color overwrite হয়ে purple হয়েছে। CSS Cascade: When multiple rules target the same element, CSS merges them. Only conflicting properties are overridden (usually by the last rule with the same specificity). -->
         <li class="purple green bold">Biriyani</li>
         <li>Beef</li>
         <li>Mutton</li>
