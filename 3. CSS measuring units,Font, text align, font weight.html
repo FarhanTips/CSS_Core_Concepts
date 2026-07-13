@@ -10,15 +10,28 @@
             background-color: lightblue;
         }
         #second{
-            /* browser window ছোট-বড় করো doesn't matter. second section full screen এর 800px জায়গাই নিবে। */
-            /* width: 800px; */
+            /* browser window ছোট-বড় করো doesn't matter. second section full screen এর 800px জায়গাই নিবে। It is called absolute or fixed unit.*/
+            width: 800px;
+            /* height: 500px; Do chatgpt for this if you cannot understand. */
 
-            /* browser window ছোট-বড় করলে second section window size এর 50% জায়গা নিবে, full screen এর নয়। */
-            width: 50%;
+            /* browser window ছোট-বড় করলে second section window size এর 50% জায়গা নিবে, full screen এর নয়। It is called relative unit.*/
+            /* width: 50%; */
         }
-        
+
         .large-heading{
-            font-size: 32px;
+            /* font-size: 32px; */
+
+        /* Most web browsers use a default root font size of 16px unless the user or CSS changes it. So, 1 rem = 16px and 2 rem = 32 px*/
+            font-size: 1.5rem;
+        }
+
+        h3{
+            text-align: center;
+        }
+
+        .bold_paragraph{
+            font-weight: bold;
+            /* font-weight: 900;  search in chatgpt - the different values of font-weight in CSS */
         }
     </style>
 </head>
@@ -26,7 +39,7 @@
     <main>
         <section>
             <h3>Background Color</h3>
-            <p>Background color is the color that appears behind the content of an element. It can be set using the CSS background-color property.</p>
+            <p class="bold_paragraph">Background color is the color that appears behind the content of an element. It can be set using the CSS background-color property.</p>
         </section>
         <section id="second">
             <h3>Background Color</h3>
