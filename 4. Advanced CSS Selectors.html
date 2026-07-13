@@ -10,6 +10,41 @@
         ol,ul,.special{
             background-color: bisque;
         }
+
+        .red{
+            color: red;
+        }
+
+        .bold{
+            font-weight: 900;
+        }
+
+        .green{
+            color: green;
+        }
+
+        /* কোনো element এর multiple class এর মধ্যে যদি green এবং bold এই দুইটা class-ও থাকে তাইলে এই style follow করবে। */
+        .green.bold{
+            font-size: 1.5rem;
+        }
+        .purple{
+            color: purple;
+        }
+
+        /* article tag selector. It selects every <article> element in the HTML document.*/
+        article{
+            background-color: cyan;
+        }
+
+        /* article p → Descendant selector; selects all <p> elements inside all <article> elements. */
+        article p{
+            color: red;
+        }
+
+        /* article > p → Child selector; selects all <p> elements that are direct children of all <article> elements. */
+        article > p{
+            font-size: 1.5rem;
+        }
     </style>
 </head>
 <body>
@@ -21,18 +56,48 @@
 
     <ol>
         <li>Messi</li>
-        <li>Ronaldo</li>
+        <!-- <li> → List item element. This element has two classes. Classes are separated by spaces. Instead of creating a new class for every combination, you can combine reusable classes. Ask Chatgpt for example. -->
+        <li class="red bold">Ronaldo</li>
         <li>Neymar</li>
         <li>Mbappe</li>
-        <li>Haland</li>
+        <li class="green">Haland</li>
     </ol>
 
     <ul>
         <li>Rice</li>
-        <li>Dal</li>
+        <li class="green bold">Dal</li>
+        <!-- এইজন্যই CSS হচ্ছে Cascading. প্রথমে Biriyani bold হছে, তারপর green হয়েছে কারন <style> tag-এর মধ্যে green এর class selector serial-এ আগে আছে purple-এর থেকে। তারপর font-size বেড়েছে, Atlast purple হয়েছে।-->
+        <li class="purple green bold">Biriyani</li>
         <li>Beef</li>
         <li>Mutton</li>
         <li>Fish</li>
     </ul>
+
+    <article>
+        <h2>This is the Heading of Article 01</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae consequuntur nostrum maiores maxime magnam nobis illum quam? Labore, itaque error quisquam asperiores expedita necessitatibus dignissimos. Eligendi, fugiat ea. Iusto voluptatem minus similique. Quod nisi doloribus excepturi molestiae mollitia sit recusandae.</p>
+    </article>
+
+    <article>
+        <h2>This is the Heading of Article 02</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae necessitatibus adipisci ratione vero quos, mollitia ipsa minima quae corrupti possimus omnis asperiores dolore quisquam animi doloribus exercitationem, eum illum optio? Modi rem, sapiente repellat voluptate magnam itaque nostrum atque consequatur!</p>
+    </article>
+
+    <p>This is also a paragraph but outside of article.</p>
+
+    <article>
+        <h2>This is the Heading of Article 03. Article 03 is the Parent.</h2>
+        <p>This is child paragraph</p>
+        <p>This is child paragraph</p>
+        <p>This is child paragraph</p>
+
+        <div>
+            <p>This is GrandChild paragraph</p>
+            <p>This is GrandChild paragraph</p>
+            <p>This is GrandChild paragraph</p>
+        </div>
+    </article>
+
+
 </body>
 </html>
