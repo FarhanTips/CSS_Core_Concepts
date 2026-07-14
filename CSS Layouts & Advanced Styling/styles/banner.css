@@ -1,0 +1,32 @@
+
+
+.banner{
+    display: flex;
+    background-color: lightblue;
+    padding: 20px;
+}
+
+.banner-content{
+    flex: 1;
+    padding: 10px;
+    /* text-align: center; */
+    align-self: center;
+}
+.banner-content button{
+    background-color: yellow;
+    padding: 5px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.banner-content button:hover{
+    background-color: rgb(105, 212, 81);
+}
+
+.banner-picture{
+    flex: 1;
+}
+
+.banner-picture img{
+    width: 100%;
+}

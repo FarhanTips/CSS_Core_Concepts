@@ -1,0 +1,27 @@
+nav ul{
+    display: flex;
+    list-style: none;
+
+}
+
+nav ul li{
+    margin-right: 2d0px;
+    padding: 8px;
+    cursor: pointer;
+    ;
+}
+
+nav ul li a{
+    text-decoration: none;
+}
+
+nav ul li:hover{
+    background-color: rgb(211, 211, 211);
+    border-radius: 8px;
+}
+
+nav ul li a:hover{
+    background-color: lightblue;
+    border-radius: 10px;
+    padding: 5px;
+}
