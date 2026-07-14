@@ -30,3 +30,36 @@
 .banner-picture img{
     width: 100%;
 }
+
+
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    
+}
+
+.form{
+    border: 3px solid green;
+    width: 300px;
+    height: 210px;
+    background-color:rgb(173, 205, 207);
+    padding: 10px;
+}
+
+.form h2{
+    text-align: center;
+}
+
+
+.form button{
+    background-color: gainsboro;
+    padding: 3px 7px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form button:hover{
+    background-color: rgba(231, 215, 215, 0.42);
+}
