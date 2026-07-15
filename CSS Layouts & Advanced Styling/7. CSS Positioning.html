@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Positioning</title>
+    <style>
+        .container {
+            position: relative;
+            border: 3px dotted green;
+            /* width: 400px; */
+        }
+
+        .container div {
+            border: 1px solid red;
+            width: 200px;
+        }
+
+        /* .ring{ */
+        /* relative = নিজের সাথে সম্পর্কিত (relative to itself). অর্থাৎ reference point হলো element-এর নিজের original position, parent বা viewport নয়। */
+        /* position: relative;
+            top: 80px;
+            left: 200px;
+        } */
+
+        /* .ring { */
+            /* parent er position static hole or na thakle root/viewport er position onuzayi move kore. */
+            /* position: absolute;
+            bottom: 50px;
+            right: 50px;
+        } */
+
+        /* .ring { */
+            /* parent er position relative, tai parent er position onuzayi move kore. */
+            /* position: absolute;
+            bottom: 80px;
+            right: 250px;
+        } */
+
+        /* .ring{
+            position: sticky;
+            top: 10px;
+        } */
+
+        .ring{
+            /* viewport or screen er position onuzayi move kore. */
+            position: fixed;
+            bottom: 20px;
+            right: 10px;
+        }
+        .box{
+            height: 100px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>static</li>
+        <li>relative</li>
+        <li>absolute</li>
+        <li>sticky</li>
+        <li>fixed</li>
+    </ul>
+
+    <div class="container">
+        <div class="boy">
+            <img src="images/boy.svg" alt="">
+        </div>
+        <div class="ring">
+            <img src="images/ring.svg" alt="">
+        </div>
+        <div class="water">
+            <img src="images/water.svg" alt="">
+        </div>
+        <div>
+            <div class="box">item 1</div>
+            <div class="box">item 2</div>
+            <div class="box">item 3</div>
+            <div class="box">item 4</div>
+            <div class="box">item 5</div>
+            <div class="box">item 6</div>
+            <div class="box">item 7</div>
+            <div class="box">item 8</div>
+            <div class="box">item 9</div>
+            <div class="box">item 10</div>
+            <div class="box">item 11</div>
+            <div class="box">item 12</div>
+            <div class="box">item 13</div>
+            <div class="box">item 14</div>
+            <div class="box">item 15</div>
+            <div class="box">item 16</div>
+            <div class="box">item 17</div>
+            <div class="box">item 18</div>
+            <div class="box">item 19</div>
+            <div class="box">item 20</div>
+            <div class="box">item 21</div>
+            <div class="box">item 22</div>
+            <div class="box">item 23</div>
+            <div class="box">item 24</div>
+            <div class="box">item 25</div>
+            <div class="box">item 26</div>
+            <div class="box">item 27</div>
+            <div class="box">item 28</div>
+            <div class="box">item 29</div>
+            <div class="box">item 30</div>
+            <div class="box">item 31</div>
+            <div class="box">item 32</div>
+            <div class="box">item 33</div>
+            <div class="box">item 34</div>
+            <div class="box">item 35</div>
+            <div class="box">item 36</div>
+            <div class="box">item 37</div>
+            <div class="box">item 38</div>
+            <div class="box">item 39</div>
+            <div class="box">item 40</div>
+            <div class="box">item 41</div>
+            <div class="box">item 42</div>
+            <div class="box">item 43</div>
+            <div class="box">item 44</div>
+            <div class="box">item 45</div>
+            <div class="box">item 46</div>
+            <div class="box">item 47</div>
+            <div class="box">item 48</div>
+            <div class="box">item 49</div>
+            <div class="box">item 50</div>
+        </div>
+    </div>
+    <div>
+        <h2>Another Container</h2>
+        <div class="box">Another Item 1</div>
+        <div class="box">Another Item 2</div>
+        <div class="box">Another Item 3</div>
+        <div class="box">Another Item 4</div>
+        <div class="box">Another Item 5</div>
+        <div class="box">Another Item 6</div>
+        <div class="box">Another Item 7</div>
+        <div class="box">Another Item 8</div>
+        <div class="box">Another Item 9</div>
+        <div class="box">Another Item 10</div>
+        <div class="box">Another Item 11</div>
+        <div class="box">Another Item 12</div>
+        <div class="box">Another Item 13</div>
+        <div class="box">Another Item 14</div>
+        <div class="box">Another Item 15</div>
+        <div class="box">Another Item 16</div>
+        <div class="box">Another Item 17</div>
+        <div class="box">Another Item 18</div>
+        <div class="box">Another Item 19</div>
+        <div class="box">Another Item 20</div>
+    </div>
+</body>
+
+</html>

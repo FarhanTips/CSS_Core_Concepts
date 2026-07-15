@@ -1,0 +1,114 @@
+<!-- 
+
+Table-এর structure হলো:
+
+table
+├── thead
+│   └── tr
+│       ├── th
+│       ├── th
+│       └── th
+│
+├── tbody
+│   ├── tr
+│   │   ├── td
+│   │   ├── td
+│   │   └── td
+│   │
+│   └── tr
+│       ├── td
+│       ├── td
+│       └── td
+│
+└── tfoot
+    └── tr
+        ├── td
+        ├── td
+        └── td
+
+
+thead = Header section
+tr = এক row
+th = Header cell
+td = Data cell
+
+th কখনো thead-এর direct child হওয়ার কথা নয়; tr-এর child হওয়ার কথা।
+সহজ নিয়ম:
+
+✅ table → thead → tr → th
+✅ table → tbody → tr → td -->
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Table</title>
+    <style>
+        table {
+            border-collapse: collapse;
+
+        }
+
+        td,
+        th {
+            border: 1px solid gray;
+            padding: 3px 10px;
+        }
+
+        th {
+            background-color: antiquewhite;
+        }
+
+        tfoot td{
+            font-size: 0.5rem;
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h2>Table HTML</h2>
+        <table>
+            <caption>Data of BD Residences</caption>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Profession</th>
+                    <th>E-mail</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Sazzad Akbor Khan</td>
+                    <td>Businessman</td>
+                    <td>sazzadakbor@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Tarek Zia</td>
+                    <td>Politician</td>
+                    <td>tarek.pol@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Tamim Iqbal</td>
+                    <td>Cricketer</td>
+                    <td>tamim.bangladesh@gmail.com</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">By BD Police</td>
+                </tr>
+            </tfoot>
+
+        </table>
+    </main>
+</body>
+
+</html>
